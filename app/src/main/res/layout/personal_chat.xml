@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background">
+
+    <ImageButton
+        android:id="@+id/imageButton_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="20dp"
+        android:background="parent"
+        android:contentDescription="@string/imageView_profile_description"
+        android:paddingVertical="10dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_profile_img_chat"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginVertical="13dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/imageView_item_description"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintStart_toEndOf="@id/imageButton_profile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_item_profile_name"
+        android:layout_width="251dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginStart="15dp"
+        android:maxWidth="251dp"
+        android:text="@string/textView_item_name"
+        android:textColor="@color/grey"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@id/imageView_profile_img_chat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/imageView_profile_img_chat"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_line"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/textInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="5dp"
+        android:layout_weight="9"
+        android:background="@null"
+        android:hint="@string/editText_message_input_hint"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/editText_text"
+        android:textColorHint="@color/editText_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButton_send"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton_send"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginVertical="5dp"
+        android:background="parent"
+        android:src="@drawable/send_message_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

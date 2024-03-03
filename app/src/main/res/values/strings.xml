@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textView_title_login">Вход</string>
+    <string name="textView_title_register">Регистрация</string>
+    <string name="textView_title_chats">Чаты</string>
+    <string name="textView_title_profile">Профиль</string>
+    <string name="textView_login">Логин</string>
+    <string name="editText_login_hint">example@mail.ru</string>
+    <string name="textView_password">Пароль</string>
+    <string name="editText_password_hint">****************</string>
+    <string name="button_login">Войти</string>
+    <string name="button_register">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="button_offer_to_register">Нет аккаунта? Зарегистрироваться</string>
+    <string name="button_offer_to_login">Уже есть аккаунт? Войти</string>
+    <string name="imageButton_profile">Profile ImageButton</string>
+    <string name="imageView_profile_description">Profile Image</string>
+    <string name="imageView_item_description">Profile Image</string>
+    <string name="textView_item_name">Zlatan Moldovan</string>
+    <string name="textView_item_last_message">Здраво, како си?</string>
+    <string name="editText_message_input_hint">Сообщение</string>
+    <string name="textView_profile_name">Замятин Александр</string>
+    <string name="textView_profile_speak">Владею:</string>
+    <string name="textView_profile_want_to_learn">Хочу овладеть:</string>
+</resources>
