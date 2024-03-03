@@ -75,7 +75,9 @@
         android:textColorHint="@color/editText_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imageButton_send"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
 
     <ImageButton
@@ -86,6 +88,7 @@
         android:background="parent"
         android:src="@drawable/send_message_svgrepo_com"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/button_send_message"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
