@@ -2,15 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="105dp"
-    android:background="@color/main_background">
+    android:layout_height="105dp">
 
     <ImageView
         android:id="@+id/imageView_item_profile_img"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="10dp"
-        android:contentDescription="@string/imageView_item_description"
+        android:contentDescription="@string/item_profile_image_description"
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +17,12 @@
 
     <TextView
         android:id="@+id/textView_item_profile_name"
-        android:layout_width="251dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
-        android:maxWidth="251dp"
-        android:text="@string/textView_item_name"
-        android:textColor="@color/grey"
+        android:text="@string/item_chat_name"
+        android:textColor="@color/light_grey"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@id/imageView_item_profile_img"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,12 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:background="@color/textView_background"
-        android:maxWidth="251dp"
+        android:background="@color/dark_grey"
         android:paddingHorizontal="5dp"
         android:paddingVertical="5dp"
-        android:text="@string/textView_item_last_message"
-        android:textColor="@color/grey"
+        android:text="@string/item_last_message"
+        android:textColor="@color/light_grey"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@id/imageView_item_profile_img"
         app:layout_constraintTop_toBottomOf="@id/textView_item_profile_name" />
@@ -48,7 +45,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/grey"
+        android:background="@color/light_grey"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
