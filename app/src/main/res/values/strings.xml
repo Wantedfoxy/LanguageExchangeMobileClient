@@ -4,9 +4,9 @@
     <string name="registration_title">Регистрация</string>
     <string name="chats_title">Чаты</string>
     <string name="profile_title">Профиль</string>
-    <string name="login_input">Логин</string>
+    <string name="login_input_title">Логин</string>
     <string name="login_hint">example@mail.ru</string>
-    <string name="password_input">Пароль</string>
+    <string name="password_input_title">Пароль</string>
     <string name="password_hint">****************</string>
     <string name="login">Войти</string>
     <string name="registration">ЗАРЕГИСТРИРОВАТЬСЯ</string>
