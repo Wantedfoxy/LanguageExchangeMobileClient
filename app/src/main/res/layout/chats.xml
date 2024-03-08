@@ -5,11 +5,11 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView_chats_page_title"
+        android:id="@+id/textView_chats_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
-        android:text="@string/chats_page_title_text"
+        android:text="@string/chats_title"
         android:textColor="@color/light_grey"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -17,13 +17,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton_go_to_profile"
+        android:id="@+id/imageButton_profile"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginVertical="10dp"
         android:layout_marginEnd="10dp"
         android:background="transparent"
-        android:contentDescription="@string/button_go_to_profile_description"
+        android:contentDescription="@string/profile"
         android:paddingVertical="10dp"
         android:src="@drawable/baseline_person_outline_24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/light_grey"
-        app:layout_constraintTop_toBottomOf="@id/textView_chats_page_title" />
+        app:layout_constraintTop_toBottomOf="@id/textView_chats_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_chats"

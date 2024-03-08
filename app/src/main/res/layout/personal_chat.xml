@@ -6,26 +6,26 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/imageButton_profile"
+        android:id="@+id/imageButton_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginVertical="20dp"
         android:background="parent"
-        android:contentDescription="@string/button_back_to_chats_description"
+        android:contentDescription="@string/back_to_chats"
         android:paddingVertical="10dp"
         android:src="@drawable/baseline_arrow_back_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_profile_img_chat"
+        android:id="@+id/imageView_chat"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginVertical="13dp"
         android:layout_marginStart="10dp"
-        android:contentDescription="@string/profile_image_description"
+        android:contentDescription="@string/profile_image"
         android:src="@drawable/baseline_account_circle_24"
-        app:layout_constraintStart_toEndOf="@id/imageButton_profile"
+        app:layout_constraintStart_toEndOf="@id/imageButton_back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -38,7 +38,7 @@
         android:text="@string/chat_name"
         android:textColor="@color/light_grey"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@id/imageView_profile_img_chat"
+        app:layout_constraintStart_toEndOf="@id/imageView_chat"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
@@ -47,13 +47,12 @@
         android:layout_height="1dp"
         android:layout_marginTop="13dp"
         android:background="@color/light_grey"
-        app:layout_constraintTop_toBottomOf="@id/imageView_profile_img_chat" />
+        app:layout_constraintTop_toBottomOf="@id/imageView_chat" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_messages"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_line" />
@@ -81,8 +80,8 @@
         android:layout_height="50dp"
         android:layout_marginVertical="5dp"
         android:background="parent"
-        android:contentDescription="@string/button_send_message_text"
-        android:src="@drawable/send_message_svgrepo_com"
+        android:contentDescription="@string/send_message"
+        android:src="@drawable/send_message_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
