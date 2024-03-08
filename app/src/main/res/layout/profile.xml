@@ -3,30 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main_background">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView_chats"
+        android:id="@+id/textView_profile_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
-        android:text="@string/textView_title_profile"
-        android:textAlignment="center"
-        android:textColor="@color/grey"
+        android:text="@string/profile_title"
+        android:textColor="@color/light_grey"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton_profile"
+        android:id="@+id/imageButton_chats"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginVertical="10dp"
         android:layout_marginEnd="10dp"
-        android:background="parent"
-        android:contentDescription="@string/imageView_profile_description"
+        android:background="transparent"
+        android:contentDescription="@string/content_description_default"
         android:paddingVertical="10dp"
         android:src="@drawable/message_round_svgrepo_com"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,16 +34,15 @@
         android:id="@+id/view_line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/grey"
-        app:layout_constraintTop_toBottomOf="@id/textView_chats" />
+        android:background="@color/light_grey"
+        app:layout_constraintTop_toBottomOf="@id/textView_profile_title" />
 
     <ImageView
         android:id="@+id/imageView_profile_img"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:contentDescription="@string/imageView_profile_description"
+        android:contentDescription="@string/content_description_default"
         android:src="@drawable/baseline_account_circle_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,29 +53,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/textView_profile_name"
-        android:textColor="@color/grey"
+        android:text="@string/profile_name"
+        android:textColor="@color/light_grey"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView_profile_img" />
 
     <TextView
-        android:id="@+id/textView_speak"
+        android:id="@+id/textView_language_proficiency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
-        android:text="@string/textView_profile_speak"
-        android:textColor="@color/grey"
+        android:text="@string/language_proficiency"
+        android:textColor="@color/light_grey"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_profile_name"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/textView_profile_name" />
 
     <EditText
-        android:id="@+id/textView_list_know"
+        android:id="@+id/editText_known_languages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -89,25 +84,25 @@
         android:maxHeight="200dp"
         android:minHeight="40dp"
         android:paddingHorizontal="20dp"
-        android:textColor="@color/editText_text"
-        android:textColorHint="@color/editText_text"
-        app:layout_constraintTop_toBottomOf="@id/textView_speak"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/textView_language_proficiency"
         tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/textView_want_to_learn"
+        android:id="@+id/textView_language_learning_goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="30dp"
-        android:text="@string/textView_profile_want_to_learn"
-        android:textColor="@color/grey"
+        android:text="@string/language_learning_goal"
+        android:textColor="@color/light_grey"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView_list_know" />
+        app:layout_constraintTop_toBottomOf="@id/editText_known_languages" />
 
     <EditText
-        android:id="@+id/textView_list_want_to_learn"
+        android:id="@+id/editText_desired_languages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -118,9 +113,9 @@
         android:maxHeight="200dp"
         android:minHeight="40dp"
         android:paddingHorizontal="20dp"
-        android:textColor="@color/editText_text"
-        android:textColorHint="@color/editText_text"
-        app:layout_constraintTop_toBottomOf="@id/textView_want_to_learn"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/textView_language_learning_goal"
         tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
