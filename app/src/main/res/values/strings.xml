@@ -12,10 +12,6 @@
     <string name="registration">ЗАРЕГИСТРИРОВАТЬСЯ</string>
     <string name="sign_up">Нет аккаунта? Зарегистрироваться</string>
     <string name="sign_in">Уже есть аккаунт? Войти</string>
-    <string name="profile">Profile ImageButton</string>
-    <string name="chats">Chats ImageButton</string>
-    <string name="back_to_chats">Back to chats ImageButton</string>
-    <string name="profile_image">Profile Image</string>
     <string name="chat_name">Zlatan Moldovan</string>
     <string name="last_message">Здраво, како си?</string>
     <string name="message_input_hint">Сообщение</string>
@@ -23,4 +19,5 @@
     <string name="language_proficiency">Владею:</string>
     <string name="language_learning_goal">Хочу овладеть:</string>
     <string name="send_message">Отправка сообщения</string>
+    <string name="content_description_default">-</string>
 </resources>
